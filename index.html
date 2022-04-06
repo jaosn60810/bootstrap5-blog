@@ -35,36 +35,52 @@
         >
       </header>
 
-      <div class="overflow-auto py-1">
-        <nav class="nav justify-content-between flex-nowrap text-nowrap">
-          <a class="nav-link link-secondary" href="#">HTML</a>
-          <a class="nav-link link-secondary" href="#">CSS</a>
-          <a class="nav-link link-secondary" href="#">JavaScript</a>
-          <a class="nav-link link-secondary" href="#">Backend</a>
-          <a class="nav-link link-secondary" href="#">社群</a>
-          <a class="nav-link link-secondary" href="#">技術</a>
-          <a class="nav-link link-secondary" href="#">管理</a>
-          <a class="nav-link link-secondary" href="#">創業</a>
-          <a class="nav-link link-secondary" href="#">設計</a>
-          <a class="nav-link link-secondary" href="#">藝術</a>
-          <a class="nav-link link-secondary" href="#">理財</a>
-        </nav>
-      </div>
+      <!-- overflow-auto 產生 scrollbar -->
+      <nav class="overflow-auto py-1">
+        <!-- text-nowrap 防止文字換行 -->
+        <ul class="nav justify-content-between flex-nowrap text-nowrap">
+          <!-- a 連結改顏色要用 link-xxx -->
+          <li><a class="nav-link link-secondary" href="#">HTML</a></li>
+          <li><a class="nav-link link-secondary" href="#">CSS</a></li>
+          <li><a class="nav-link link-secondary" href="#">JavaScript</a></li>
+          <li><a class="nav-link link-secondary" href="#">Backend</a></li>
+          <li><a class="nav-link link-secondary" href="#">社群</a></li>
+          <li><a class="nav-link link-secondary" href="#">技術</a></li>
+          <li><a class="nav-link link-secondary" href="#">管理</a></li>
+          <li><a class="nav-link link-secondary" href="#">創業</a></li>
+          <li><a class="nav-link link-secondary" href="#">設計</a></li>
+          <li><a class="nav-link link-secondary" href="#">藝術</a></li>
+          <li><a class="nav-link link-secondary" href="#">理財</a></li>
+        </ul>
+      </nav>
 
+      <!-- 自定義 banner 的 class => bg-cover-->
       <div
         class="p-4 p-md-5 mb-4 text-white rounded-3 bg-cover"
         style="
-          background-image: url(https://images.unsplash.com/photo-1549074862-6173e20d02a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80);
+          background-image: url(https://cdn.hk01.com/di/media/images/dw/20210520/472069680836644864708642.jpeg/WqjXlKHzELZdXWdbMKnk82uJf8_6jdnTeGsV93hrFfc?v=w1920r16_9);
         "
       >
         <div class="col-12 col-md-6">
-          <h1 class="display-4 fst-italic">你絕對想不到深海的我創造了什麼</h1>
+          <h1 class="display-4 fst-italic">早上好中国现在我有冰淇淋</h1>
+          <figure>
+            <audio
+              controls
+              src="./John Cena Ice cream with proper Translations.mp3"
+            >
+              Your browser does not support the
+              <code>audio</code> element.
+            </audio>
+          </figure>
+
           <p class="lead my-3">
-            是心藝景不分。首臺帶成他又請是續健現通清物報住處一詩難轉市離新上的水一代主，價護起能顧了一成緊認牛資界期也智二大媽；自人近加，入的行利去前為力打非準高些有如他這。
+            我很喜欢冰淇淋 但是 速度与激情9 比冰淇淋 速度与激情 速度与激情9
+            我最喜欢 所以…现在是音乐时间 准备 1 2 3 两个礼拜以后 速度与激情9 × 3
+            不要忘记 不要错过 记得去电影院看速度与激情9 因为非常好电影
+            动作非常好 差不多一样冰淇淋 再见
           </p>
-          <p class="lead mb-0">
-            <a href="#" class="text-white">繼續閱讀</a>
-          </p>
+
+          <a href="#" class="lead text-white">繼續閱讀</a>
         </div>
       </div>
 
@@ -73,19 +89,22 @@
           <div class="card row g-0 flex-row h-100">
             <div class="col">
               <div class="p-4 d-flex flex-column h-100">
-                <strong class="d-inline-block mb-2 text-primary">藝術</strong>
-                <h3 class="mb-0">創造力不等於想像力</h3>
-                <div class="mb-1 text-muted">三月 12 日</div>
+                <strong class="d-inline-block mb-2 text-primary">理財</strong>
+                <h3 class="mb-0">冰淇淋等於維尼幣</h3>
+                <time class="mb-1 text-muted">六月 4 日</time>
+                <!-- 使用 mb-auto 將多出的空間吃掉，讓下面的 a 連結能對齊-->
                 <p class="card-text mb-auto">
-                  的不是也有作了在被一個，的那個有問題坐在心挑戰，名其時候我頭髮我一起不住。
+                  玩命光頭 6
+                  最失敗的地方，在於使用危險的載具，難道好賴屋不知道比核子潛艇更危險的東西是坦克車嗎。
                 </p>
+                <!-- stretched-link 會產生一個偽元素覆蓋整張卡片 -->
                 <a href="#" class="stretched-link">繼續閱讀</a>
               </div>
             </div>
             <div
               class="col-4 bg-cover d-none d-lg-block"
               style="
-                background-image: url(https://images.unsplash.com/photo-1562095241-8c6714fd4178?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fG9jZWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=60);
+                background-image: url(https://truth.bahamut.com.tw/s01/202202/6b74031a91cad6529bd03000d55c10e2.JPG);
               "
             ></div>
           </div>
@@ -95,11 +114,11 @@
           <div class="card row g-0 flex-row h-100">
             <div class="col">
               <div class="p-4 d-flex flex-column h-100">
-                <strong class="d-inline-block mb-2 text-primary">藝術</strong>
-                <h3 class="mb-0">創造力不等於想像力</h3>
-                <div class="mb-1 text-muted">三月 12 日</div>
+                <strong class="d-inline-block mb-2 text-primary">技術</strong>
+                <h3 class="mb-0">和平的秘方：微笑、子彈</h3>
+                <time class="mb-1 text-muted">十月 2 日</time>
                 <p class="card-text mb-auto">
-                  的不是也有作了在被一個，的那個有問題坐在心挑戰，名其時候我頭髮我一起不住。是我要好好，需去哪心去了的不對於現。
+                  如果有一把槍解決不了的，那就拿第二把，相信我，上次打敗了一支超大海星。
                 </p>
                 <a href="#" class="stretched-link">繼續閱讀</a>
               </div>
@@ -107,7 +126,7 @@
             <div
               class="col-4 bg-cover d-none d-lg-block"
               style="
-                background-image: url(https://images.unsplash.com/photo-1562095241-8c6714fd4178?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fG9jZWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=60);
+                background-image: url(https://assets.juksy.com/files/articles/111095/800x_100_w-619d270a78fbe.jpg);
               "
             ></div>
           </div>
@@ -118,9 +137,9 @@
         <div class="col-md-8">
           <article>
             <h2>深海、愛與尊敬</h2>
-            <p>2022 年 一月 <a href="#">John Cena</a></p>
+            <time>2022 年 一月 <a href="#">John Cena</a></time>
 
-            <p class="😉">
+            <p class="mt-3">
               年都啊啊啊然後我還有，是真，的是的樣不好意的老：出了我看到，好是他們上面寫：喻文州前後我。這個是苦了原歡一小商店⋯卡卡並沒有這是，當年得他們很想下班，唱，圖人們直播。就不想一張，給他的歌個月兩人現實的東。
             </p>
             <hr />
@@ -142,13 +161,13 @@
               </li>
               <li>要是哥哥是話應該。日偷偷說請不要</li>
             </ul>
-            <figure class="😘">
+            <figure class="figure">
               <img
-                src="https://images.unsplash.com/photo-1504472478235-9bc48ba4d60f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+                src="https://i.pinimg.com/originals/a9/27/be/a927be8b743d8de22c308d18f42cd733.gif"
                 class="img-fluid"
                 alt="..."
               />
-              <figcaption class="😚">的天謝大家要一漂亮上面寫</figcaption>
+              <figcaption class="figure-caption">You can't see me</figcaption>
             </figure>
             <p>And this is an ordered list:</p>
             <ol>
@@ -262,7 +281,7 @@
             </p>
             <h3>Example table</h3>
             <p>And don't forget about tables in these posts:</p>
-            <table class="😘😄">
+            <table class="table">
               <thead>
                 <tr>
                   <th>Name</th>
@@ -330,7 +349,8 @@
             <div class="p-4 bg-light rounded">
               <h4>關於我</h4>
               <p class="mb-0">
-                接列的老論看我那就同事。覺得真的特但其實，能一間真的感覺這是並不應該在幹嘛，不得不得看他們吧排球的東西。
+                約翰·希南，是美國職業摔角選手、演員、饒舌歌手及電視節目主持人。他被一些人認為是有史以來最偉大的職業摔角選手之一，
+                目前以兼職合約受聘於世界摔角娛樂，並出演過多部電影。
               </p>
             </div>
 
@@ -367,9 +387,8 @@
 
     <footer class="bg-light border-top py-4 mt-5 text-center">
       <p>六角學院 Bootstrap 5 練習作業。</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
+
+      <a href="#">Back to top</a>
     </footer>
   </body>
 </html>
